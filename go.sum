@@ -1,0 +1,8 @@
+github.com/go-chi/chi/v5 v5.0.10 h1:y2aWXaHgkjsVxx5U3hB4Vj8u0RdcGFsM36VdRkKphxk=
+github.com/go-chi/chi/v5 v5.0.10/go.mod h1:F3xeUqkd2UP89uYeIY3KeqPFUIuUXtbKc7yyFNrmsPg=
+github.com/jackc/pgx/v5 v5.5.4 h1:r72dj27u77FWi9DnI2hNf+flvio6uH5Fu7EwKaHZGZM=
+github.com/jackc/pgx/v5 v5.5.4/go.mod h1:HnT+AWWxuf/S9ILyn02MTC5smqAyh+rjdFJ6nQmak6c=
+github.com/joho/godotenv v1.5.1 h1:sk3EIB6Hu1uFQz88NhFyYF3BWq2gFQZtCk29CYi5FKc=
+github.com/joho/godotenv v1.5.1/go.mod h1:jhJfB41qMJlDPmRbSv/96TFJzyDuCTEQeQd8IVCPtnI=
+golang.org/x/sync v0.1.0 h1:WItGmGwxQkGZk5ZPz04yRkEOYlPCq0PWophSFl+47A8=
+golang.org/x/sync v0.1.0/go.mod h1:piyB/1eEOxQ8sAtpTFh4Y9j3hTzbGJYx3soQhGwLm9U=
