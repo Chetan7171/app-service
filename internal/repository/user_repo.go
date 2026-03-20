@@ -26,6 +26,8 @@ func (r *UserRepo) GetAll(ctx context.Context) ([]models.User, error) {
         return nil, err
     }
 
+    defer rows.Close()
+
     var users []models.User
     for rows.Next() {
         var u models.User
