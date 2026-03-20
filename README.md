@@ -66,14 +66,25 @@ This service is part of a **multi‑repository DevOps project**.
 Example connection string (Kubernetes):
 postgres://postgres:postgres@postgres:5432/users?sslmode=disable
 
-
 ---
 
 ## 🗄 Database Migration
 
 This folder contains SQL files used to initialize the PostgreSQL schema.
 
-File:migrations/001_create_users.sql
+File:
+
+migrations/001_create_users.sql
+
+Content:
+
+```sql
+CREATE TABLE IF NOT EXISTS users (
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL,
+    email TEXT UNIQUE NOT NULL
+);
+
 
 📁 Folder Structure
 app-service/
@@ -93,7 +104,7 @@ app-service/
  └── README.md
 
 
- 🐳 Run Locally with Docker
+🐳 Run Locally with Docker
 Build the image:
 docker build -t app-service .
 
@@ -105,9 +116,11 @@ docker run -p 8080:8080 app-service
 Run directly:
 go run cmd/main.go
 
+
 📦 Production Build
 For Linux build:
 CGO_ENABLED=0 GOOS=linux go build -o app cmd/main.go
+
 
 ☁ Deployment (EKS + ArgoCD + Helm)
 This service is deployed via the gitops-deploy repo using:
